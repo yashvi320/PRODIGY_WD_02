@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Azeret Mono', monospace;
+    font-variant: tabular-nums;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 200px;
+    background-color: rgb(86, 203, 195);
+}
+
+#box{
+    font-size: 110px;
+    display: grid;
+    place-items: center;
+}
+
+#button{
+    display: flex;
+    flex-direction:row;
+    gap:2vw;
+    padding-top: 30px;
+}
+
+.btn{
+    background-color: #e5e5e5;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius:25px;
+    height:50px;
+    width:105px;
+    justify-content: space-evenly;
+}
+
+.btn:hover{
+    background-color: #5d5454;
+    color: #e5e5e5;
+    transform: scale(1.13,1.13 );
+}    
+
+#lapbox.inactive{
+    display:none;
+}
+
+#lapbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    color: #0A2342;
+    margin-top:25px;
+    height: 185px;
+    width: 30vw;
+    border: 2px solid #0A2342;
+    border-radius: 20px;
+    padding-left: 36px;
+}
+
+#lapbox::-webkit-scrollbar{
+    display:none;
+}
+
+#laps ol{
+    list-style-type: decimal;
+    width: 100%;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.lap{
+    padding-bottom: 2px;
+    font-size: 30px;
+
+}
